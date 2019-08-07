@@ -1,0 +1,1 @@
+rsync -chavzP --stats root@100.107.147.116:/data/xxx/dump_db /data/xxx/
