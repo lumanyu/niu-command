@@ -1,0 +1,1 @@
+tcpdump -i eth0 '(dst host 172.19.0.13 and dst port 80 ) or (src host 172.19.0.13 and src port 80 )'
