@@ -1,0 +1,2 @@
+openssl x509 -noout -modulus -in cacert.pem | openssl md5
+openssl rsa -noout -modulus -in private/cakey.key | openssl md5
