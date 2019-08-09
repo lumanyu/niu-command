@@ -1,0 +1,7 @@
+find /home/*/public_html -type f -exec grep -l 'pattern' {} +
+The + modifier makes it group the filenames in manageable chunks.
+
+However, you can do it with grep -r. The arguments to this should be the directory names, not filenames.
+
+grep -rl 'pattern' /home/*/public_html
+This will just have 500+ arguments, not thousands of filenames.
