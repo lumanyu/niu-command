@@ -5,3 +5,8 @@ However, you can do it with grep -r. The arguments to this should be the directo
 
 grep -rl 'pattern' /home/*/public_html
 This will just have 500+ arguments, not thousands of filenames.
+
+
+find -type f -name 'check_unuse.log*' -exec tail -n1 {} +  | grep begin
+
+find -type f -name 'check_unuse.log*' -exec tail -n1 {} +  | grep begin|  sort -k5
