@@ -1,0 +1,2 @@
+openssl req -new -newkey rsa:2048 -nodes -out private/lx.keyless.tcdn.qq.com.csr -keyout private/lx.keyless.tcdn.qq.com.key
+openssl ca -config openssl-ca.cnf -policy signing_policy -extensions signing_req -out lx.keyless.tcdn.qq.com.pem -infiles lx.keyless.tcdn.qq.com.csr
